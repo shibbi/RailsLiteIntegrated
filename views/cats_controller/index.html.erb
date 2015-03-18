@@ -1,0 +1,10 @@
+<h1>ALL THE CATS</h1>
+<p>
+  <ol>
+    <% @cats.each do |cat| %>
+      <li><a href='/cats/<%= cat.id %>'><%= cat.name %></a></li>
+    <% end %>
+  </ol>
+</p>
+
+<a href="/cats/new">New cat!</a>

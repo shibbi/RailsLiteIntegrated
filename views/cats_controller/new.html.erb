@@ -1,0 +1,12 @@
+<form action="/cats" method="POST">
+  <!-- <input type='hidden' name="cat[id]" value="<% $cat_id %>"> -->
+  <label>Name:
+    <input type="text" name="cat[name]" value="<%= @cat.name %>">
+  </label>
+  <br/>
+  <!-- <label>Owner
+    <input type="text" name="cat[owner]" value="<%= @cat.owner_id %>">
+  </label>
+  <br/> -->
+  <input type="submit">
+</form>
