@@ -3,7 +3,8 @@
 ## Description
 
 Compiled from [ActiveRecordLite][arl] and [RailsLite][rl] with phases and
-specs into an integrated mock Rails server.
+specs into an integrated mock Rails server. It uses a SQLite3 database,
+which has cats, human, and houses.
 
 ## Setup
 
