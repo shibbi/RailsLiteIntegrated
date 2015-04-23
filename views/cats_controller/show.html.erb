@@ -1,2 +1,4 @@
-<p><%= @cat.name %></p>
-<!-- <p><%= @cat.owner %></p> -->
+<p>Name: <%= @cat.name %></p>
+<p>Owner: <%= @cat.owner ? @cat.owner.name : 'None (Stray)' %></p>
+
+<p><a href="/">Back to All Cats</a></p>

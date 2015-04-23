@@ -1,12 +1,15 @@
 <form action="/cats" method="POST">
-  <!-- <input type='hidden' name="cat[id]" value="<% $cat_id %>"> -->
   <label>Name:
     <input type="text" name="cat[name]" value="<%= @cat.name %>">
   </label>
   <br/>
-  <!-- <label>Owner
-    <input type="text" name="cat[owner]" value="<%= @cat.owner_id %>">
+  <label>Owner
+    <select name="cat[owner_id]">
+      <% @humans.each do |human| %>
+        <option value='<%= human.id %>'><%= human.name %></option>
+      <% end %>
+    </select>
   </label>
-  <br/> -->
+  <br/>
   <input type="submit">
 </form>
